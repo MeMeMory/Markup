@@ -1,0 +1,314 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Yeseva+One:regular);
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:regular,italic);
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+a,
+ul,
+li,
+ol {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  border: none;
+}
+
+html {
+  height: 100%;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Yeseva One";
+  font-weight: 400;
+}
+
+header {
+  width: 100%;
+  height: 230px;
+  background-color: #aeaeae;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+header .container .logo {
+  cursor: pointer;
+  width: 60%;
+}
+header .container .logo img {
+  width: 273px;
+  height: 100px;
+}
+header .container .phones {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+header .container .phones .phones-number {
+  cursor: pointer;
+  font-family: "Open Sans - Condensed Light";
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+header .container .phones .phones-callback {
+  cursor: pointer;
+  -webkit-text-decoration: underline #898989 dashed;
+          text-decoration: underline #898989 dashed;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  font-family: "PT Sans";
+  font-weight: 400;
+  color: #767676;
+}
+
+.container {
+  max-width: 980px;
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0 auto !important;
+}
+
+.menu {
+  width: 100%;
+  background-color: #767676;
+}
+.menu .menu-catalog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.75px;
+}
+.menu .menu-catalog a {
+  cursor: pointer;
+  padding-right: 25px;
+  border-right: 1px solid #ffffff;
+  outline: none;
+  color: #ffffff;
+  font-size: 30px;
+}
+.menu .menu-catalog a:last-of-type {
+  padding-right: 0px;
+  border-right: none;
+}
+.menu .menu-catalog a:hover {
+  text-decoration: underline;
+}
+
+.slider .block {
+  position: relative;
+  width: 100%;
+  height: 462px;
+  overflow: hidden;
+}
+
+.content {
+  padding-top: 10px;
+}
+.content .content-dom {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.35px;
+  margin-bottom: 26px;
+}
+.content .main {
+  display: flex;
+  justify-content: space-between;
+}
+.content .main .right-block {
+  width: 180px;
+}
+.content .main .right-block .right-block__categories {
+  padding-bottom: 5px;
+  font-size: 18px;
+  letter-spacing: 0.45px;
+}
+.content .main .right-block .right-block__categories .right-block__categories:last-of-type {
+  padding-bottom: 110px;
+}
+.content .main .right-block .right-block__categories .subcategories {
+  list-style-type: disc;
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  line-height: 22px;
+  margin-left: 17px;
+}
+.content .main .right-block .right-block__categories .selected {
+  color: #010101;
+  text-decoration: underline;
+}
+.content .main .right-block .right-block__categories span {
+  text-decoration: underline;
+}
+.content .main .right-block .price-list {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 25px;
+  align-items: center;
+  text-align: center;
+}
+.content .main .right-block .price-list img {
+  width: 97px;
+  height: 111px;
+}
+.content .main .card-wraper {
+  width: 870px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .main .card-wraper .card {
+  background-color: #b1b1b1;
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px 20px 15px;
+  padding: 20px 20px 14px 20px;
+}
+.content .main .card-wraper .card .card-img {
+  align-self: center;
+  width: 210px;
+  height: 209px;
+  margin-bottom: 21px;
+}
+.content .main .card-wraper .card h4 {
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.45px;
+  margin-bottom: 55px;
+}
+.content .main .card-wraper .card .card-bottom {
+  display: flex;
+}
+.content .main .card-wraper .card .card-bottom span {
+  color: #444444;
+  font-size: 28px;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  padding-right: 65px;
+}
+.content .main .card-wraper .card .card-bottom img {
+  width: 28px;
+  height: 21px;
+}
+.content .content-bottom {
+  width: 870px;
+  margin-left: auto;
+}
+.content .content-bottom .pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  justify-content: center;
+  margin-bottom: 67px;
+}
+.content .content-bottom .pagination .page-item {
+  font-size: 14px;
+  line-height: 22px;
+}
+.content .content-bottom .pagination .page-item .page-link {
+  color: #767676;
+  margin: 0 10px;
+}
+.content .content-bottom .pagination .active {
+  color: #444444;
+  font-size: 18px;
+}
+.content .content-bottom .content-info {
+  display: flex;
+  border-top: 1px solid black;
+  height: 422px;
+}
+.content .content-bottom .content-info p {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.35px;
+  margin-top: 29px;
+  padding-right: 40px;
+}
+.content .content-bottom .content-info p:last-of-type {
+  padding-right: 0px;
+}
+
+footer {
+  color: #ffffff;
+  width: 100%;
+  height: 220px;
+  background-color: #767676;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: top;
+  padding-top: 50px;
+  height: 100%;
+}
+footer .container .about-company {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.35px;
+  width: 201px;
+}
+footer .container .nav .nav-item {
+  cursor: pointer;
+  padding-bottom: 5px;
+  margin-left: 10px;
+}
+footer .container .nav .nav-item:hover {
+  text-decoration: underline;
+}
+footer .container .development {
+  display: flex;
+  width: 220px;
+}
+footer .container .development img {
+  width: 36px;
+  height: 38px;
+  margin-right: 9px;
+}
