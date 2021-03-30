@@ -235,7 +235,7 @@ body {
 }
 
 @media (max-width: 960px) {
-  .menu .menu-catalog a {
+  .menu .menu-catalog .nav-item a {
     padding-right: 20px;
     font-size: 20px;
   }
