@@ -235,7 +235,7 @@ body {
 }
 
 @media (max-width: 960px) {
-  .menu .menu-catalog .nav-item a {
+  .menu .menu-catalog a {
     padding-right: 20px;
     font-size: 20px;
   }
@@ -346,7 +346,7 @@ body {
   justify-content: center;
   margin-bottom: 67px;
 }
-.content .content-bottom .pagination .page-item .page-link {
+.content .content-bottom .pagination .page-items .page-links {
   color: #767676;
   margin: 0 10px;
 }
@@ -392,6 +392,10 @@ footer .container {
 footer .container .about-company {
   letter-spacing: 0.35px;
   width: 201px;
+}
+footer .container .nav {
+  display: flex;
+  flex-direction: column;
 }
 footer .container .nav .nav-item {
   cursor: pointer;
